@@ -198,6 +198,7 @@
 
                     setTimeout(() => {
                         $("#confirmation-message").hide()
+                        $("#contact-form").trigger("reset");
                      }, 3000);
 
 
