@@ -37,113 +37,27 @@
     </header>
 
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-[#002659] text-white text-center py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-extrabold mb-4">Innovación y Tecnología</h2>
-            <p class="text-lg mb-6 leading-relaxed">
-                En ANDT Digital Solutions transformamos desafíos en oportunidades a través de tecnología innovadora y personalizada.
-                Diseñamos soluciones digitales que potencian negocios, optimizan procesos y conectan a las empresas con el futuro.
-            </p>
-            <a href="#services" class="bg-white text-[#002659] py-3 px-6 rounded-xl shadow-md hover:bg-gray-300 transition">
-                Descubre más
-            </a>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Desarrollo Web</h3>
-                    <p class="text-gray-600">
-                        Creamos sitios web modernos, responsivos y enfocados en brindar una experiencia de usuario excepcional.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Consultoría TI</h3>
-                    <p class="text-gray-600">
-                        Te asesoramos en la integración de tecnologías que optimicen tus procesos y comunicación empresarial.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Automatización</h3>
-                    <p class="text-gray-600">
-                        Implementamos soluciones que eliminan tareas repetitivas, ahorran tiempo y reducen costos operativos.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Análisis de Datos</h3>
-                    <p class="text-gray-600">
-                        Transformamos datos en decisiones estratégicas con herramientas avanzadas como Power BI.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="bg-gray-100 py-16">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold">Nosotros</h2>
-                <p class="text-lg text-gray-600 mt-4">
-                    Transformamos procesos complejos en soluciones simples y eficaces orientadas al éxito.
+        <section class="section">
+            <div class="container">
+                <h2>Política de Privacidad</h2>
+                <p>
+                    En ANDT Digital Solutions, valoramos tu privacidad y estamos comprometidos con proteger la información que compartes con nosotros. Esta política explica cómo recopilamos, usamos y protegemos tus datos personales.
                 </p>
+                <h3>1. Información que Recopilamos</h3>
+                <p>Recopilamos datos como tu nombre, correo electrónico, número de teléfono y cualquier otra información que decidas compartir con nosotros a través de formularios o interacciones en nuestro sitio web.</p>
+                <h3>2. Uso de la Información</h3>
+                <p>Utilizamos tus datos para proporcionar servicios, responder a tus consultas y mejorar nuestra oferta. Nunca compartiremos tu información sin tu consentimiento.</p>
+                <h3>3. Protección de Datos</h3>
+                <p>Mantenemos medidas de seguridad para proteger tus datos personales contra accesos no autorizados, alteraciones o pérdidas.</p>
+                <p>Si tienes preguntas sobre esta política, contáctanos en <a href="mailto:soporte@andtsolutions.com">soporte@andtsolutions.com</a>.</p>
             </div>
-            <div class="grid gap-8 lg:grid-cols-3">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Nuestra Misión</h3>
-                    <p class="text-gray-600">
-                        Proveer soluciones tecnológicas integrales que optimicen procesos empresariales y productividad.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Nuestra Visión</h3>
-                    <p class="text-gray-600">
-                        Ser referentes en innovación tecnológica, transformando la gestión empresarial.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Nuestros Valores</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li>✨ Innovación</li>
-                        <li>🤝 Compromiso</li>
-                        <li>📢 Transparencia</li>
-                        <li>👥 Trabajo en equipo</li>
-                        <li>🎯 Orientación al cliente</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-8">Contáctanos</h2>
-            <form id="contact-form" class="space-y-4 max-w-lg mx-auto" method="POST" action="{{ route('store') }}">
-                @csrf
-                <input type="text" id="name" name="name" placeholder="Nombre" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
-                <input type="text" id="lastname" name="lastname" placeholder="Apellidos" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
-                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
-                <input type="tel" id="phone" name="phone" placeholder="Teléfono" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
-                <textarea id="message" name="message" placeholder="Mensaje" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring"></textarea>
+        </section>
 
 
-                <button type="submit" class="w-full bg-[#002659] text-white py-3 rounded-lg hover:bg-blue-700 transition">
-                    Enviar
-                </button>
-            </form>
 
-            <!-- Confirmación del envío -->
-            <div id="confirmation-message" class="mt-4 text-green-600 font-bold hidden">
-                ¡Tu mensaje fue enviado con éxito! Gracias por contactarnos.
-            </div>
-        </div>
-    </section>
+
+
 
 
 
@@ -180,48 +94,6 @@
     <script src="js/script.js"></script>
     <script src="//code.tidio.co/p14n9qepuqbn9cv65lwko7hf9pnkmhij.js" async></script>
 
-    <script>
-        $('#contact-form').on('submit', function(e) {
-            e.preventDefault();
-
-            $.ajax({
-                type: 'POST'
-                , url: $(this).attr('action')
-                , data: $(this).serialize()
-                , success: function(data) {
-                    $("#confirmation-message").show()
-                    // ToastManager.createCustomToast({
-                    //     title: data.title,
-                    //     message: data.message,
-                    //     type: 'bg-success'
-                    // });
-
-                    setTimeout(() => {
-                        $("#confirmation-message").hide()
-                        $("#contact-form").trigger("reset");
-                     }, 3000);
-
-
-                }
-                , error: function(data) {
-                    // if (data.status === 422) {
-                    //     // Si hay errores de validación, muestra los mensajes de error en un alert danger
-                    //     var errors = data.responseJSON.errors;
-                    //     var errorHtml = '<ul>';
-                    //     $.each(errors, function(key, value) {
-                    //         errorHtml += '<li>' + value + '</li>';
-                    //     });
-                    //     errorHtml += '</ul>';
-
-                    //     // Actualiza el contenido del elemento alert y muestra
-                    //     $('#validation-errors').html(
-                    //         '<i class="fas fa-exclamation-circle"></i> Errores en el formulario:' +
-                    //         errorHtml).show();
-                    // }
-                }
-            });
-        });
-
-    </script>
+    
 </body>
 </html>
