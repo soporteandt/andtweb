@@ -189,16 +189,16 @@
                 , url: $(this).attr('action')
                 , data: $(this).serialize()
                 , success: function(data) {
-                    alert(data.message)
+                    $("#confirmation-message").show()
                     // ToastManager.createCustomToast({
                     //     title: data.title,
                     //     message: data.message,
                     //     type: 'bg-success'
                     // });
 
-                    // setTimeout(() => {
-                    //     window.location.href = data.redirect;
-                    // }, 3000);
+                    setTimeout(() => {
+                        $("#confirmation-message").hide()
+                     }, 3000);
 
 
                 }
