@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+/* document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar que el formulario se envíe y recargue la página
     
     // Mostrar el mensaje de éxito
@@ -24,8 +24,9 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Opcional: limpiar los campos del formulario
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
+    document.getElementById('message').value = ''; 
 });
+*/
 
 
 
