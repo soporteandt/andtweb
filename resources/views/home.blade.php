@@ -124,7 +124,8 @@
     <section id="contact" class="py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-8">Contáctanos</h2>
-            <form id="contact-form" class="space-y-4 max-w-lg mx-auto" method="POST" action="{{ route('home') }}">
+            <form id="contact-form" class="space-y-4 max-w-lg mx-auto" method="POST" action="{{ route('store') }}">
+                @csrf
                 <input type="text" id="name" name="name" placeholder="Nombre" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
                 <input type="text" id="lastname" name="lastname" placeholder="Apellidos" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
                 <input type="email" id="email" name="email" placeholder="Correo Electrónico" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
