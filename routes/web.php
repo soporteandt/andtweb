@@ -15,9 +15,9 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/store', [HomeController::class, 'store'])->name('store');
-Route::get('/politicas', function () {
+Route::get('/politica-de-privacidad', function () {
     return view('politicas');
 });
-Route::get('/terminos', function () {
+Route::get('/terminos-y-condiciones', function () {
     return view('terminos');
 });
