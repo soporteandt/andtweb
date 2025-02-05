@@ -184,7 +184,7 @@
                 , url: $(this).attr('action')
                 , data: $(this).serialize()
                 , success: function(data) {
-
+                    alert(data.message)
                     // ToastManager.createCustomToast({
                     //     title: data.title,
                     //     message: data.message,
