@@ -1,0 +1,329 @@
+/* General */
+
+.logo-image {
+    width: 80px; /* Ajusta según el tamaño que desees */
+    height: auto; /* Mantiene las proporciones */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+    vertical-align: middle; /* Alineación con el texto */
+}
+
+.logo-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f97101; /* Ajusta el color del texto */
+    display: inline-block; /* Alinea el texto junto al logo */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #002659; /* COLOR DEL LOGO ANDT*/
+}
+
+header {
+    background-image: url('../images/imagenprincipal.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 15px 0; /* Espaciado interno */
+    /* background: hsl(201, 96%, 35%); 
+    color: #fff;
+    padding: 1rem 0; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {  
+    color: #002659; /* COLOR DE INICIO; SERVICIO, ETC */
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.hero {
+    background: #002659; /* COLOR DE INNOVACION Y TECNOLOGÍA */
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero .btn {
+    background: #fff;
+    color: #002659;  /* COLOR DE BOTON DESCUBRE MÁS */
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .contact form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        padding: 0.7rem;
+    }
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #222; /* Fondo oscuro para el footer */
+    color: #fff; /* Texto blanco */
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+footer .social-links a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+footer .social-links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .social-links a:hover {
+    opacity: 0.7; /* Efecto hover */
+}
+
+footer .company-info {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+footer .company-info1 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    color: #fff; /* Cambia al color de texto deseado */
+    padding: 5px 10px; /* Espacio alrededor del texto */
+    position: relative; /* Posición necesaria para el efecto */
+    transition: all 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+nav ul li a::after {
+    content: ""; /* Añade un elemento decorativo vacío */
+    position: absolute;
+    bottom: 0; /* Ubica la línea en la parte inferior del enlace */
+    left: 0;
+    width: 0; /* Por defecto, la línea está oculta */
+    height: 2px; /* Grosor de la línea */
+    background-color: #002659; /* Color blanco para la línea */
+    transition: width 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Muestra la línea completa al pasar el cursor */
+}
+
+/* Estilo base del botón ENVIAR*/
+.btn {
+    background-color: #002659; /* Color inicial del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Suaviza la transición */
+    display: inline-block; /* Para comportamiento de botón */
+    font-weight: bold; /* Resalta el texto */
+}
+
+/* Efecto hover para el botón */
+.btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo */
+    color: #fff; /* Mantén el color del texto */
+    transform: scale(1.05); /* Amplía ligeramente el botón */
+}
+
+
+
+
+/* Pantalla de carga */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Fondo azul corporativo 002659*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1s ease, visibility 1s ease;
+    opacity: 1; /* Asegura que el preloader esté visible al inicio */
+    visibility: visible; /* Asegura que el preloader esté visible al inicio */
+}
+
+#preloader img {
+    width: 150px;
+    height: auto;
+    /*animation: logo-spin 2s infinite linear;*/
+    animation: none;
+}
+
+@keyframes logo-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Ocultar preloader */
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Animación de apertura */
+body {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
