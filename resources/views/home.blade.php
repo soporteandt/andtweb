@@ -6,7 +6,7 @@
     <title>ANDT Digital Solutions</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
 
 
