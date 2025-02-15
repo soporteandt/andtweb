@@ -153,7 +153,7 @@
         <div class="footer-content">
             <div class="social-links">
                 <a href="https://www.linkedin.com/company/andt-digital-solutions/" target="_blank">
-                    <img src="http://imgfz.com/i/XQcGEqf.png" alt="LinkedIn">
+                    <img src="images/linkedln.png" alt="LinkedIn">
                 </a>
                 <a href="https://wa.me/51926182630" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
