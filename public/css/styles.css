@@ -327,3 +327,134 @@ body {
 body.loaded {
     opacity: 1;
 }
+
+
+
+/* Terminos y privacidad */
+.privacy-policy {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.privacy-subtitle {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.privacy-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.privacy-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.privacy-list li {
+    background: #e3e3e3;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.privacy-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Sección de consentimiento */
+.consent-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Títulos y subtítulos */
+.consent-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.consent-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Texto */
+.consent-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Lista de finalidades */
+.consent-list {
+    padding-left: 20px;
+}
+
+.consent-list li {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Enlaces */
+.consent-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.consent-link:hover {
+    text-decoration: underline;
+}
+
+/* Casilla de verificación */
+.consent-checkbox {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.consent-checkbox input {
+    margin-right: 10px;
+}
+
+
+
+

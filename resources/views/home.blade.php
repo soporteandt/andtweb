@@ -126,11 +126,21 @@
             <h2 class="text-3xl font-bold mb-8">Contáctanos</h2>
             <form id="contact-form" class="space-y-4 max-w-lg mx-auto" method="POST" action="{{ route('store') }}">
                 @csrf
-                <input type="text" id="name" name="name" placeholder="Nombre" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
+                <input type="text" id="name" name="name" placeholder="Nombres" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
                 <input type="text" id="lastname" name="lastname" placeholder="Apellidos" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
                 <input type="email" id="email" name="email" placeholder="Correo Electrónico" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
                 <input type="tel" id="phone" name="phone" placeholder="Teléfono" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring">
                 <textarea id="message" name="message" placeholder="Mensaje" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring"></textarea>
+
+
+                <div class="consent-checkbox">
+                    <input type="checkbox" id="aceptoDatos" required>
+                    <label for="aceptoDatos">
+                        He leído y acepto el <a href="/tratamiento-de-datos-personales" class="consent-link" target="_blank">tratamiento de mis datos personales</a>.
+                    </label>
+                </div>
+
+
 
 
                 <button type="submit" class="w-full bg-[#002659] text-white py-3 rounded-lg hover:bg-blue-700 transition">
